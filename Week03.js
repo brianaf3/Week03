@@ -165,3 +165,19 @@ willBuyDrink(true, 11);
 // 13. Create a function of your own that solves a problem.
 //In comments, write what the function does and why you created it.
 
+/* My function will deterimne my Halloween costume depending on the price of the costume.
+I will buy the lesser priced costume*/
+function whichCostume(costumeA, costumeB){
+    if(costumeA > costumeB){
+        return costumeB;
+    }
+    else{
+        return costumeA;
+    }
+}
+
+let fairy = 35.00;
+let cat = 25.00;
+
+
+console.log(`I will buy the ${whichCostume(fairy, cat)} dollar costume.`);
